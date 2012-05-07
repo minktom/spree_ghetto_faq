@@ -1,0 +1,29 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  activerecord:
+    attributes:
+      question: &question_labels
+        question: Question
+        answer: Answer
+        position: Position
+    models:
+      question:
+        one: question
+        many: questions
+
+  helpers:
+    label:
+      question:
+        <<: *question_labels
+
+  question: question
+  questions: FAQS
+  ghetto_faq:
+    questions: Questions
+    new_question: New question
+    editing_question: Editing question
+    confirm_delete: Are you sure ?
+    more: More »
+

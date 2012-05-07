@@ -1,0 +1,7 @@
+<h1><%= t("questions.editing_page") %></h1>
+<%= render "spree/shared/error_messages", :target => @question %>
+
+<%= form_for [:admin, @question] do |f| %>
+  <%= render :partial => 'form', :locals => { :f => f } %>
+  <%= render :partial => 'spree/admin/shared/edit_resource_links' %>
+<% end %>

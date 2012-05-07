@@ -1,0 +1,23 @@
+<% content_for :sidebar do %>
+  <%= render :partial => "spree/shared/taxonomies" %>
+<% end %>
+
+<h1><%= t('questions') %></h1>
+
+
+<div id="questions_container">
+  <% @questions.each do |question| %>
+    <div class="question_container">
+      <p><%= link_to question.question, "##{dom_id question}" %></p>
+    </div>
+  <% end %>
+</div>
+
+<div id="answers_container">
+  <% @questions.each do |question| %>
+    <div class="answer_container" id="<%= dom_id question %>">
+      <h2><%= question.question %></h2>
+      <p><%= question.answer %></p>
+    </div>
+  <% end %>
+</div>

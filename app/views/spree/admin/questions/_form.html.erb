@@ -7,7 +7,7 @@
     <% end %>
 
     <%= f.field_container :answer do %>
-      <%= f.label :answer %><br />
+      <%= f.label :answer %> <span class="required">*</span><br />
       <%= f.text_area :answer, {:class => 'fullwidth'} %>
       <%= f.error_message_on :answer %>
     <% end %>

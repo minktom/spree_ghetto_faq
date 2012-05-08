@@ -19,7 +19,7 @@ en:
         <<: *question_labels
 
   question: question
-  questions: FAQS
+  questions: FAQ
   ghetto_faq:
     questions: Questions
     new_question: New question

@@ -1,4 +1,4 @@
-module SpreeFaqs
+module SpreeGhettoFaqs
   module Generators
     class InstallGenerator < Rails::Generators::Base
 

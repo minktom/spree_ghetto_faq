@@ -6,6 +6,12 @@
       <%= f.error_message_on :question %>
     <% end %>
 
+    <%= f.field_container :locale do %>
+      <%= f.label :locale %> <span class="required">*</span><br />
+      <%= f.select :locale, I18n.available_locales, :class => 'fullwidth' %>
+      <%= f.error_message_on :locale %>
+    <% end %>
+
     <%= f.field_container :answer do %>
       <%= f.label :answer %> <span class="required">*</span><br />
       <%= f.text_area :answer, {:class => 'fullwidth'} %>

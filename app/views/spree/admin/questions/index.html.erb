@@ -12,7 +12,7 @@
 <table class="index">
   <tr>
     <th><%= Spree::Question.human_attribute_name(:question) %></th>
-    <th><%= Spree::Question.human_attribute_name(:answer) %></th>
+    <th><%= Spree::Question.human_attribute_name(:locale) %></th>
     <th><%= t("action") %></th>
   </tr>
   <tbody>
@@ -22,7 +22,7 @@
         <%= question.question %>
       </td>
       <td>
-        <%= question.answer %>
+        <%= question.locale %>
       </td>
       <td>
         <%= link_to_edit question %> &nbsp;

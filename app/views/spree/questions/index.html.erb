@@ -17,7 +17,7 @@
   <% @questions.each do |question| %>
     <div class="answer_container" id="<%= dom_id question %>">
       <h2><%= question.question %></h2>
-      <p><%= question.answer %></p>
+      <p><%= raw question.answer %></p>
     </div>
   <% end %>
 </div>
